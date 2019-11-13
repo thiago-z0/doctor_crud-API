@@ -41,9 +41,17 @@ class DoctorController {
         });
       });
 
+      const { name, crm, phone, state, city } = req.body;
 
 
-    return res.json(map);
+
+      return res.json({
+        name,
+        crm,
+        phone,
+        state,
+        city
+      });
   }
 
   async index (req,res) {

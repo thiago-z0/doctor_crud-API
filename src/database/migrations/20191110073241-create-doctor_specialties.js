@@ -21,7 +21,7 @@ module.exports = {
         references: { model: 'doctors', key: 'id' },
         onUpdte: 'CASCADE',
         onDelete: 'CASCADE',
-        allowNull: true,
+        allowNull: false,
       },
       created_at : {
         type: Sequelize.DATE,
